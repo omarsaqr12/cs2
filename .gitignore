@@ -1,0 +1,8 @@
+/build/
+/build-*/
+*.o
+*.obj
+*.exe
+*.out
+*.gcda
+*.gcno
