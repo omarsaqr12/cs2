@@ -1,17 +1,21 @@
-#ifndef Point_H 
-#define Point_H 
-class Point { 
-private:  
-float x;
-float y;
- public:
- Point();
- Point(float a ,float b);
-void setX(float a); 
-void setY(float b);
-float getX();
-float getY();
-void Display();
-float distance(Point a);
-}; 
-#endif
+#ifndef CS2_POINT_H
+#define CS2_POINT_H
+
+class Point {
+public:
+    Point();
+    Point(float x, float y);
+
+    void setX(float x);
+    void setY(float y);
+    float getX() const;
+    float getY() const;
+    void Display() const;
+    float distance(const Point& other) const;
+
+private:
+    float x;
+    float y;
+};
+
+#endif  // CS2_POINT_H
